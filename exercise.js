@@ -45,8 +45,12 @@ loopingData2();
 
 // Use `Object.keys()` to get an array of the dates that candies were sold at store1.
 function loopingData3() {
-
-}
+  var dates = [];
+  var whole = Object.keys(store1);
+      dates.push(whole);
+      return dates;
+  }
+  loopingData3();
 
 
 // Use a loop to calculate the total number of candies sold at store1.
