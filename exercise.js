@@ -3,30 +3,18 @@ var store1 = require('./store1-data.js');
 // *********** ACCESSING DATA *********** \\
 
 // Return the value '4.63' from store1
-function accessesingData1(val) {
-  var inv = [];
-  for (var val in store1) {
-    if (store1.hasOwnProperty(val)) {
-      // console.log(`obj.${val} = ${store1[val]}`);
-      // console.log(val);
-      // if (store1.hasOwnProperty.val); {
-      //   Object.values(val);
-      inv.push(store1[val]);
-     console.log(inv);
-    }
-  }return (inv);
-}
+  function accessesingData1() {
 
+ return store1['2015-01-08'][0][1];
 
-
-accessesingData1([]);
-
+ }
+accessesingData1();
 
 // Return how many 'Mint Wafers' were sold on January 6th
 function accessesingData2() {
-
-}
-
+  return store1['2015-01-06'][1][2];
+  }
+  accessesingData2();
 
 // *********** LOOPING OVER DATA *********** \\
 
