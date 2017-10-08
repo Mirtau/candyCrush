@@ -3,31 +3,45 @@ var store1 = require('./store1-data.js');
 // *********** ACCESSING DATA *********** \\
 
 // Return the value '4.63' from store1
-  function accessesingData1() {
+function accessesingData1() {
 
- return store1['2015-01-08'][0][1];
+  return store1['2015-01-08'][0][1];
 
- }
+}
 accessesingData1();
 
 // Return how many 'Mint Wafers' were sold on January 6th
 function accessesingData2() {
   return store1['2015-01-06'][1][2];
-  }
-  accessesingData2();
+}
+accessesingData2();
 
 // *********** LOOPING OVER DATA *********** \\
 
 
 // Create a loop to read which candies were sold by store1 on Jan 8. After simply outputting the data, try creating an array that contains the candy names.
 function loopingData1() {
+  var sold = [];
+  for (var i = 0; i < store1['2015-01-08'][i].length; i++) {
 
+    sold.push(store1['2015-01-08'][i][0]);
+  }
+  return sold;
 }
+loopingData1();
+
+
 
 // Create a loop to count the total number of candies sold on Jan 10 at store1. Where do you have to initialize the counter variable? Why?
 function loopingData2() {
-
+  var sold = 0;
+  for (var i = 0; i < store1['2015-01-10'].length; i++) {
+    console.log(i);
+    sold += store1['2015-01-10'][i][2];
+  }
+  return (sold);
 }
+loopingData2();
 
 // Use `Object.keys()` to get an array of the dates that candies were sold at store1.
 function loopingData3() {
