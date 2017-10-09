@@ -55,12 +55,21 @@ function loopingData3() {
 
 // Use a loop to calculate the total number of candies sold at store1.
 function loopingData4() {
+  var total = 0;
+    for(var date in store1){
+      for(var i = 0; i < store1[date].length; i++)
+      {total += store1[date][i][2];
 
+      }
+      }
+      return total;
+      }
+  loopingData4();
 }
 
 // In the previous exercise, where did you have to initialize the counter variable? Why?
 function loopingData5() {
-  return 'Answer'
+  return 'at the key because that is where the loop had to start'
 }
 
 // *********** CHALLENGE *********** \\
