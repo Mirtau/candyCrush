@@ -1,0 +1,19 @@
+{
+  "name": "candycrush",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirtau/candyCrush.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirtau/candyCrush/issues"
+  },
+  "homepage": "https://github.com/Mirtau/candyCrush#readme"
+}
